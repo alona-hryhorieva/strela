@@ -1,0 +1,65 @@
+<div class="header">
+    <div class="header__top d-none d-md-block">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    @@include('menu/top_menu.html')
+                </div>
+                <div class="col no-gutters align-self-center">
+                    <div class="row justify-content-end">
+                        <div class="col-auto header__address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span> г. Москва, Зельев пер-к, д.11</span></div>
+                        <div class="col-auto header__search header__mobile-menu">
+                            @@include('header/header_search.html')
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="header__base">
+        <div class="container">
+            <div class="row align-items-center py-md-5 pb-5">
+                <div class="header__logo col-12 col-md-6 col-lg-3 justify-content-between bottom_border-blue row no-gutters">
+                    <div class="col-6 col-md-12 py-2 px-2 px-md-0 py-md-0">
+                        <a href="index.html"><img src="img/logo.png" alt="голубая стрела" class="img-responsive"></a>
+                    </div>
+                    <div class="col-1 header__mobile-separator d-block d-md-none py-2 pl-2">
+                        <i class="fas fa-align-justify text_gradient mobile_click"></i>
+                        <div class="iseeu_menu"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 my-5 my-md-0 d-md-none d-lg-block">
+                    <div class="header__disclamer clip_gradient">Продажа рекламно-сувенирной<br>продукции онлайн по всей России</div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="header__address d-block d-md-none text-center mb-3">г. Москва, Зельев пер-к, д.11</div>
+                    <div class="row justify-content-center justify-content-md-end align-items-center">
+                        <div class="col-auto">
+                            <a href="tel:+74955850690" class="d-block button-white button-shadow black_color opensans header__address-phone">
+                                <i class="fas fa-mobile-alt"></i> +7 (495) 585 06 90
+                            </a>
+                            <div class="little_remark opensans mt-2 posa">*Минимальная сумма заказа 5000 руб.</div>
+                        </div>
+                        <div class="col-auto header__basket">
+                            <div class="header__basket-wrap">
+                                <div class="shopping">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span class="header__basket-count">5</span>
+                                </div>
+                                @@include('modules/cart.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu d-none d-md-block">
+        <div class="container">
+            @@include('menu/header_menu.html')
+        </div>
+    </div>
+</div>

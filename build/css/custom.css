@@ -1,0 +1,97 @@
+.constructor {
+  background-color: #efefef;
+}
+
+.constructor .constructor_stages .img_wrap {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.constructor .constructor_stages .img_wrap img {
+  max-width: -webkit-calc(200px - 70px);
+  max-width: calc(200px - 70px);
+  max-height: -webkit-calc(200px - 70px);
+  max-height: calc(200px - 70px);
+}
+
+.constructor .constructor_stages .img_wrap:after {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='103.000000pt' height='79.000000pt' viewBox='0 0 103.000000 79.000000' preserveAspectRatio='xMidYMid meet'%3e%3cmetadata%3e Created by potrace 1.15, written by Peter Selinger 2001-2017 %3c/metadata%3e%3cg transform='translate(0.000000,79.000000) scale(0.100000,-0.100000)' fill='%23000000' stroke='none'%3e%3c/g%3e%3c/svg%3e");
+}
+
+.constructor .constructor_stages .title {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.constructor .button_wrapper {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 160px;
+  max-width: 100%;
+  background: -webkit-linear-gradient(315deg, #2f80ed, #00a9f5);
+  background: -o-linear-gradient(315deg, #2f80ed, #00a9f5);
+  background: linear-gradient(135deg, #2f80ed, #00a9f5);
+  border: none;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.constructor .button_wrapper .white-button {
+  margin: 2px;
+  background-color: #efefef;
+  color: #2f80ed;
+  font-size: 16px;
+  font-weight: 700;
+  height: 40px;
+  line-height: 40px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  width: -webkit-calc(100% - 4px);
+  width: calc(100% - 4px);
+}
+
+.constructor .button_wrapper .white-button:hover {
+  margin: 0px;
+  width: 160px;
+  max-width: 100%;
+  height: 44px;
+  line-height: 44px;
+  background: -webkit-linear-gradient(315deg, #2f80ed, #00a9f5);
+  background: -o-linear-gradient(315deg, #2f80ed, #00a9f5);
+  background: linear-gradient(135deg, #2f80ed, #00a9f5);
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.adyyutant_advantages .img_block {
+  height: 79px;
+  line-height: 79px;
+}
+
+.adyyutant_advantages .img_block img {
+  display: inline-block;
+}
+
+@media (min-width: 991px) {
+  .constructor .constructor_stages .img_wrap {
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+  }
+
+  .constructor .constructor_stages .img_wrap img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
