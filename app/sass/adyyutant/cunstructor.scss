@@ -14,8 +14,9 @@
 				max-width: calc(200px - 70px);
 	    		max-height: calc(200px - 70px);
 			}
-			&:after{
-				content: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='103.000000pt' height='79.000000pt' viewBox='0 0 103.000000 79.000000' preserveAspectRatio='xMidYMid meet'%3e%3cmetadata%3e Created by potrace 1.15, written by Peter Selinger 2001-2017 %3c/metadata%3e%3cg transform='translate(0.000000,79.000000) scale(0.100000,-0.100000)' fill='%23000000' stroke='none'%3e%3c/g%3e%3c/svg%3e");
+			svg{
+				width: 70%;
+				height: 70%;
 			}
 		}
 		.title{
@@ -57,7 +58,7 @@
     	}
 	}
 }
-@media (min-width:991px){
+@media (min-width:992px){
 	.constructor{
 		.constructor_stages{
 			.img_wrap{
@@ -78,6 +79,13 @@
 		line-height: 79px;
 		img{
 			display: inline-block;
+		}
+		svg{
+			max-width: 100%;
+    		max-height: 100%;
+		}
+		g{
+			fill: #fff;
 		}
 	}
 }

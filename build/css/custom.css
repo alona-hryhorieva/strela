@@ -21,8 +21,9 @@
   max-height: calc(200px - 70px);
 }
 
-.constructor .constructor_stages .img_wrap:after {
-  content: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='103.000000pt' height='79.000000pt' viewBox='0 0 103.000000 79.000000' preserveAspectRatio='xMidYMid meet'%3e%3cmetadata%3e Created by potrace 1.15, written by Peter Selinger 2001-2017 %3c/metadata%3e%3cg transform='translate(0.000000,79.000000) scale(0.100000,-0.100000)' fill='%23000000' stroke='none'%3e%3c/g%3e%3c/svg%3e");
+.constructor .constructor_stages .img_wrap svg {
+  width: 70%;
+  height: 70%;
 }
 
 .constructor .constructor_stages .title {
@@ -83,7 +84,80 @@
   display: inline-block;
 }
 
-@media (min-width: 991px) {
+.adyyutant_advantages .img_block svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.adyyutant_advantages .img_block g {
+  fill: #fff;
+}
+
+.sale .img_block {
+  min-height: 265px;
+  line-height: 165px;
+}
+
+.sale .img_block img {
+  display: inline_block;
+  max-width: 100%;
+}
+
+.sale .title {
+  font-size: 18px;
+  text-transfor: uppercase;
+  font-weight: 800;
+}
+
+.sale .complex-white-button {
+  max-width: 155px;
+}
+
+.sale .price {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.colors_block {
+  line-height: 1;
+}
+
+.colors_block .color {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.colors_block .blue {
+  background-color: #0b24fb;
+}
+
+.colors_block .green {
+  background-color: #0f7f12;
+}
+
+.colors_block .dark_blue {
+  background-color: #020c7e;
+}
+
+.colors_block .light_blue {
+  background-color: #1275cc;
+}
+
+@media (min-width: 480px) {
+  .works_block.adyyutant .item .img_block {
+    margin-top: -46%;
+  }
+
+  .works_block.adyyutant .item img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
   .constructor .constructor_stages .img_wrap {
     width: 250px;
     height: 250px;

@@ -98,6 +98,7 @@ gulp.task('default', ['fileinclude', 'css', 'image:build'], function () {
         server: {
             baseDir: "./build/",
         },
+        browser: 'chrome',
 		files: 'strela.local'
     });
     // watch files and run tasks
