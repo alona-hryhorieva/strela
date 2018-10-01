@@ -1,5 +1,13 @@
 .constructor{
 	background-color: #efefef;
+	position: relative;
+	.bg_img_block{
+		display: none;
+		position: absolute;
+		img{
+			max-width: 100%;
+		}
+	}
 	.constructor_stages{
 		.img_wrap{
 			width: 200px;
@@ -44,6 +52,8 @@
     		border-radius: 8px;
     		display: inline-block;
     		width: calc(100% - 4px);
+    		position: relative;
+    		background-color: #fff;
     		&:hover{
     			margin: 0px;
     			width: 160px;
@@ -54,7 +64,21 @@
     			cursor: pointer;
     			color: #fff;
     			text-decoration: none;
+    			&:after{
+    				display: none;
+    			}
     		}
+    		&:after {
+			    background: linear-gradient(135deg,hsla(0,0%,100%,.7),hsla(0,0%,100%,0));
+			    color: #2f80ed;
+			    position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    left: 2px;
+			    right: 0;
+			    content: "";
+			    display: block;
+			}
     	}
 	}
 }
@@ -73,12 +97,32 @@
 		}
 	}	
 }
+@media (min-width:1200px){
+	.constructor{
+		.bg_img_block{
+		    bottom: -18%;
+		    right: 0px;
+		    width: 24%;
+		    display: block;
+		}
+	}
+}
+@media (min-width:1600px){
+	.constructor{
+		.bg_img_block{
+		    bottom: -28%;
+		    right: 0px;
+		    width: 30%;
+		}
+	}
+}
 .adyyutant_advantages{
 	.img_block{
 		height: 79px;
 		line-height: 79px;
 		img{
 			display: inline-block;
+			max-width: 100%;
 		}
 		svg{
 			max-width: 100%;
